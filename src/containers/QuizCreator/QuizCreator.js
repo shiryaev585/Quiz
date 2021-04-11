@@ -1,11 +1,8 @@
 import React from "react";
+import axios from "axios";
 import classes from "./QuizCreator.module.css";
 import Button from "../../components/UI/Button/Button";
-import {
-  createControl,
-  validate,
-  validateForm,
-} from "../../form/formFramework";
+import { createControl, validate, validateForm } from "../../form/formFramework";
 import Input from "../../components/UI/Input/Input";
 import Select from "../../components/UI/Select/Select";
 
@@ -76,10 +73,21 @@ export default class QuizCreator extends React.Component {
     })
   };
 
-  createQuizHandler = (event) => {
+  createQuizHandler = async (event) => {
     event.preventDefault()
 
-    console.log(this.state.quiz)
+    try {
+      await axios.post('https://quiz-4415a-default-rtdb.firebaseio.com/quizes.json', this.state.quiz)
+      
+      this.setState({
+        quiz: [],
+        isFormValid: false,
+        rightAnswerId: 1,
+        formControls: createFormControls(),
+      })
+    } catch (error) {
+      console.log(error)
+    }
   };
 
   changeHandler = (value, controlName) => {
