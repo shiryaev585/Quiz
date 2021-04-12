@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+import axios from "../../axios/axiosQuiz";
 import classes from "./QuizCreator.module.css";
 import Button from "../../components/UI/Button/Button";
 import { createControl, validate, validateForm } from "../../form/formFramework";
@@ -77,7 +77,7 @@ export default class QuizCreator extends React.Component {
     event.preventDefault()
 
     try {
-      await axios.post('https://quiz-4415a-default-rtdb.firebaseio.com/quizes.json', this.state.quiz)
+      await axios.post('quizes.json', this.state.quiz)
       
       this.setState({
         quiz: [],
