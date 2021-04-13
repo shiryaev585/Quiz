@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "../../axios/axiosQuiz";
+import axios from "../../api/axiosQuiz";
 import classes from "./QuizCreator.module.css";
 import Button from "../../components/UI/Button/Button";
 import { createControl, validate, validateForm } from "../../form/formFramework";

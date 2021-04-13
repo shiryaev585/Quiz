@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "../../axios/axiosQuiz";
+import axios from "../../api/axiosQuiz";
 import classes from "./Quiz.module.css";
 import ActiveQuiz from "../../components/ActiveQuiz/ActiveQuiz";
 import FinishedQuiz from "../../components/FinishedQuiz/FinishedQuiz";

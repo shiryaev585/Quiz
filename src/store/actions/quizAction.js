@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../../api/axiosQuiz";
 import { FETCH_QUIZES_ERROR, FETCH_QUIZES_START, FETCH_QUIZES_SUCCESS } from "./types";
 
 export const fetchQuizes = () => {
