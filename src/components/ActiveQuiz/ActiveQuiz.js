@@ -10,9 +10,12 @@ const ActiveQuiz = (props) => {
           <strong>{props.answerNumber}.</strong>&nbsp;
           {props.question}
         </span>
-        <small>
+        <p className={classes.NumbersWrapper}>
+        <small className={classes.Numbers}>
           {props.answerNumber} из {props.quizLength}
         </small>
+        </p>
+        
       </p>
 
       <AnswersList

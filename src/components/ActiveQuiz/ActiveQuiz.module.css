@@ -11,3 +11,12 @@
     display: flex;
     justify-content: space-between;
 }
+
+.NumbersWrapper {
+    width: 75px;
+    margin: 0;
+}
+
+.Numbers {
+    float: right;
+}
