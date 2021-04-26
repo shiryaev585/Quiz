@@ -1,6 +1,7 @@
 {
   "short_name": "Quiz",
   "name": "Quiz application",
+  "description": "Приложение для создания и прохождения тестов",
   "icons": [
     {
       "src": "./icons/logo32.png",
@@ -45,7 +46,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#fd8355 ",
-  "background_color": "#fd8355 ",
+  "theme_color": "#fd8355",
+  "background_color": "#fd8355",
   "orientation": "portrait"
 }
