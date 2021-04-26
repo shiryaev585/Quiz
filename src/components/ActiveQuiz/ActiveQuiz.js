@@ -5,7 +5,7 @@ import AnswersList from "./AnswersList/AnswersList";
 const ActiveQuiz = (props) => {
   return (
     <div className={classes.ActiveQuiz}>
-      <p className={classes.Question}>
+      <div className={classes.Question}>
         <span>
           <strong>{props.answerNumber}.</strong>&nbsp;
           {props.question}
@@ -16,7 +16,7 @@ const ActiveQuiz = (props) => {
         </small>
         </p>
         
-      </p>
+      </div>
 
       <AnswersList
         state={props.state}

@@ -24,3 +24,7 @@
     padding: 15px;
     border-radius: 5px;
 }
+
+.Auth button {
+    margin-bottom: 15px;
+}
